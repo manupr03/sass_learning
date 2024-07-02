@@ -70,14 +70,25 @@ $text-color:green;
 // }
 
 // Use @each to Map Over Items in a List
-  $colors:(one:blue,two:black,three:red);
+  // $colors:(one:blue,two:black,three:red);
 
-  @each $key,$color in $colors {
-    .#{$color}-bg { background-color : $color; }
-  }
+  // @each $key,$color in $colors {
+  //   .#{$color}-bg { background-color : $color; }
+  // }
 
-    div {
-      height: 200px;
-      width: 200px;
+  //   div {
+  //     height: 200px;
+  //     width: 200px;
+  //   }
+
+
+  // Apply a Style Until a Condition is Met with @while
+
+  $index:1;
+  @while $index < 6{
+    .text-#{$index}{
+      font-size: 15px * $index;
     }
-
+    $index : $index+1;
+  }
+  
