@@ -6,4 +6,11 @@
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   border-radius: 100px;
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border: 6px solid black;
 }/*# sourceMappingURL=style.css.map */
