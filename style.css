@@ -1,7 +1,7 @@
-.header {
+.blog-post h1 {
   text-align: center;
-}
-
-.blog-post, h2 {
   color: green;
+}
+.blog-post p {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,20 @@
 $text-color:green;
 
-.header{
+// .header{
+//     text-align: center;
+//   }
+//   .blog-post, h2 {
+//     color: $text-color;
+//   }
+
+// Nested scss
+
+.blog-post {
+  h1 {
     text-align: center;
-  }
-  .blog-post, h2 {
     color: $text-color;
   }
+  p {
+    font-size: 20px;
+  }
+}
