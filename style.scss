@@ -39,24 +39,33 @@ $text-color:green;
 
 // Use @if and @else to Add Logic To Your Styles
 
-@mixin border-stroke($val){
-  @if $val==light{
-    border:1px solid black;
-  }
-    @else if $val==medium{
-    border:3px solid black;
-  }
-    @else if $val==heavy{
-    border:6px solid black;
-  }
-  @else{
-    border:none;
-  }
+// @mixin border-stroke($val){
+//   @if $val==light{
+//     border:1px solid black;
+//   }
+//     @else if $val==medium{
+//     border:3px solid black;
+//   }
+//     @else if $val==heavy{
+//     border:6px solid black;
+//   }
+//   @else{
+//     border:none;
+//   }
 
-}
-  #box {
-    width: 150px;
-    height: 150px;
-    background-color: red;
-    @include border-stroke(heavy);
+// }
+//   #box {
+//     width: 150px;
+//     height: 150px;
+//     background-color: red;
+//     @include border-stroke(heavy);
+//   }
+
+// Use @for to Create a Sass Loop
+
+@for $j from 1 to 6 {
+  .text-#{$j}{
+    font-size: 15px * $j
   }
+}
+
